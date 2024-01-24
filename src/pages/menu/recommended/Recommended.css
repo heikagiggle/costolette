@@ -1,0 +1,22 @@
+.recommended-flex {
+  display: flex;
+  margin-left: 20rem;
+}
+.recommended-title {
+  margin-left: 20rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .recommended-flex {
+    display: block;
+    margin-left: 9px;
+  }
+
+  .recommended-title {
+    margin-left: 1rem;
+    margin-bottom: 30px;
+  }
+}

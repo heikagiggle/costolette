@@ -1,0 +1,48 @@
+.chat-box {
+  padding: 4rem 6rem;
+}
+.chatbox-header {
+  text-align: center;
+  justify-items: center;
+}
+.chatbox-header p {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.chat-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+}
+
+.chat-form,
+.whatsapp-widget {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.whatsapp-widget h3 {
+  border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .chat-box {
+    padding: 2rem 4rem;
+  }
+  .chatbox-header p {
+    font-size: 18px;
+  }
+  .chat-container {
+    padding: 0rem;
+   
+  }
+  .chat-form,
+  .whatsapp-widget {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+  }
+}
