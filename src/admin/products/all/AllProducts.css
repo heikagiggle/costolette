@@ -1,0 +1,151 @@
+.product-container {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-images {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.loader {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+.product-card {
+  display: flex;
+  gap: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  align-items: flex-start;
+  background-color: #fff;
+}
+
+.product-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.product-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto;
+  font-size: 14px;
+  gap: 10px;
+}
+.product-meta span {
+  display: inline-block;
+  width: auto;
+}
+
+.product-price {
+  font-weight: 600;
+  color: #28a745;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.product-desc {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.product-category {
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.product-price {
+  font-weight: 600;
+  color: #28a745;
+}
+
+.product-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.product-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.product-actions button:hover {
+  color: #007bff;
+}
+
+.product-actions button:last-child:hover {
+  color: #dc3545;
+}
+
+.no-products {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .product-card{
+    display: flex;
+    flex-direction: column;
+  }
+}

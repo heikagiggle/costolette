@@ -60,24 +60,25 @@ const awards = [
   {
     imgUrl: images.award01,
     title: "Emmanuella",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Absolutely loved the flavors—each bite was unforgettable!",
   },
   {
     imgUrl: images.award02,
     title: "Rukome",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Exceptional service and the food? Simply divine.",
   },
   {
     imgUrl: images.award03,
     title: "Toyo",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "A perfect blend of taste, atmosphere, and presentation.",
   },
   {
     imgUrl: images.award05,
     title: "Temmy",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Hands down the best dining experience I’ve had this year.",
   },
 ];
+
 const blog = [
   {
     title:"A Breakfast Tale of Delight",

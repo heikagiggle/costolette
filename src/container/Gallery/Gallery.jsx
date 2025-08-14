@@ -8,6 +8,7 @@ import {
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Gallery.css";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const scrollRef = React.useRef(null);
@@ -25,17 +26,18 @@ const Gallery = () => {
   return (
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
-        <SubHeading title="Instagram" />
+        <SubHeading title="Menu" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p
           className="p__opensans"
           style={{ color: "#000000", marginTop: "2rem" }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-          mattis ipsum turpis elit elit scelerisque egestas mu.
+          Take a visual tour through our menu! From vibrant starters to
+          indulgent desserts, each dish is crafted with care and captured in its
+          most mouthwatering moment.
         </p>
         <button type="button" className="custom__button">
-          View More
+          <Link to="/menupage">Know more</Link>
         </button>
       </div>
       <div className="app__gallery-images">
@@ -65,7 +67,7 @@ const Gallery = () => {
             onClick={() => scroll("right")}
           />
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

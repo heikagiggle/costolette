@@ -1,0 +1,138 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.product-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group label {
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+  width: 100%;
+  resize: none;
+}
+.form-group select {
+  height: 35px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.image-input {
+  width: 300px;
+}
+.image-preview {
+  width: 80px;
+  height: 80px;
+}
+.image-group {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.arrow-left{
+  margin: 1rem 0;
+}
+
+.delete-button {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.image-group:hover .delete-button {
+  opacity: 1;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.submit-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background-color: #ff6347;
+  color: white;
+}
+
+.submit-btn:disabled {
+  background-color: #ffa08a;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}

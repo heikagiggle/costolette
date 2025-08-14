@@ -1,21 +1,15 @@
-/* eslint-disable no-undef */
-import React from "react";
-import Home from "./Home";
-import { Routes, Route } from "react-router-dom";
-import { AboutPage, Menupage, Registration, ChatBox } from "./pages";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
-
+import Routing from "./components/routing/Routing";
+import { AuthProvider } from "./hooks/context";
 
 const App = () => {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutpage" element={<AboutPage />} />
-        <Route path="/menupage" element={< Menupage/>} />
-        <Route path="/registration" element={<Registration />} />
-        <Route path="/order" element={<ChatBox />} />
-      </Routes>
+      <AuthProvider>
+        <ToastContainer position="top-right"/>
+        <Routing />
+      </AuthProvider>
     </>
   );
 };

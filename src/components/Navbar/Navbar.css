@@ -14,12 +14,11 @@
 .app__navbar-logo img {
   width: 150px;
 }
-.app__navbar-logo h1{
-  color: #FF6347;
+.app__navbar-logo h1 {
+  color: #ff6347;
   font-size: 30px;
 }
 .app__navbar-links {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +107,7 @@
 
 @media screen and (max-width: 650px) {
   .app__navbar {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .app__navbar-login {
